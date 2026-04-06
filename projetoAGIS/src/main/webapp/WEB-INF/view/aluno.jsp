@@ -141,7 +141,6 @@
 					        <i class="fas fa-save me-1"></i> Atualizar
 					    </button>
 					    
-					    <%-- ADICIONE O FORMNOVALIDATE AQUI --%>
 					    <button type="submit" name="botao" value="Excluir" class="btn btn-danger px-4 shadow-sm" formnovalidate>
 					        <i class="fas fa-trash me-1"></i> Excluir
 					    </button>
