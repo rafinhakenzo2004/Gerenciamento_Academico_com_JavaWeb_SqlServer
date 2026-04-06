@@ -17,12 +17,10 @@
                 
                 <div class="d-flex justify-content-center gap-3 mt-4">
                     <a href="aluno" class="btn btn-primary btn-lg px-8">Alunos</a>
-                    <%-- Disciplinas agora centraliza o acesso, incluindo Conteúdo --%>
                 </div>
             </div>
         </div>
 
-        <%-- Seção de Cards Inferiores Reorganizada --%>
         <div class="row mt-5 g-4 justify-content-center">
             
             <%-- 1. Disciplinas --%>
