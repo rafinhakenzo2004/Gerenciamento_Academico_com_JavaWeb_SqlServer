@@ -225,7 +225,6 @@ CREATE PROCEDURE sp_insere_aluno
     @curso_codigo       INT
 AS
 BEGIN
-    -- Validações internas
     IF EXISTS (SELECT 1 FROM aluno WHERE cpf = @cpf)
     BEGIN
         RAISERROR('Erro: Este CPF já está vinculado a outro aluno.', 16, 1);
@@ -234,7 +233,6 @@ BEGIN
 
     DECLARE @ano_lim_calc INT, @sem_lim_calc INT;
     
-    -- Chama as procedures auxiliares
     EXEC sp_valida_cpf @cpf;
     EXEC sp_valida_idade @dt_nasc;
     EXEC sp_gera_ra @ano_ingresso, @sem_ingresso, @ra OUTPUT;
